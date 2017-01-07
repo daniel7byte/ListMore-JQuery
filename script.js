@@ -1,5 +1,10 @@
+/* -----------------------------------------------------------
+*  Algoritmo actualizado para jQuery v3.1.1 modificando la 
+*  función size() por la propiedad length.
+*  -----------------------------------------------------------
+*/
 $(document).ready(function () {
-  size_li = $("#myList div").size();
+  size_li = $("#myList div").length;
   x=3;
   $('#myList div:lt('+x+')').show();
   $('#loadMore').click(function () {
